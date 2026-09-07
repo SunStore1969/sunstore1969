@@ -2562,8 +2562,10 @@
             }
         })();
 
-        // ===== Firebase =====
-        const firebaseConfig = {
+
+
+
+const firebaseConfig = {
   apiKey: "AIzaSyBUavTVEbAIyRdphPZjt5JjP_QXmk5Uh0Q",
   authDomain: "sun-store-a47bd.firebaseapp.com",
   projectId: "sun-store-a47bd",
@@ -2572,11 +2574,9 @@
   appId: "1:837468266838:web:8e9b841d92ced20d4076f7",
   measurementId: "G-RR6BD1BY6G"
 };
-        };
-
         firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
-        auth.languageCode = 'ar';
+        auth.languageCode = 'app';
 
         const googleProvider = new firebase.auth.GoogleAuthProvider();
         googleProvider.addScope('https://www.googleapis.com/auth/userinfo.email');
