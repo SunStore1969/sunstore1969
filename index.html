@@ -2896,7 +2896,8 @@
         let currentUser = null;
         let userProfile = JSON.parse(localStorage.getItem('userProfile')) || {};
 
- const allProducts = [{
+ const allProducts = [
+     {
             id: 1,
             name: "هوك جزارة ٢٠٠كيلو جرام",
             price: 800,
@@ -2909,7 +2910,21 @@
             images: ["https://g.top4top.io/p_3905ssa2n1.jpeg" ],
             freeShipping: true,
             description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
-        }, {
+        },
+        {
+            id: 1,
+            name: "هوك جزارة ٢٠٠كيلو جرام",
+            price: 800,
+            oldPrice: 900,
+            discount: "5%",
+            category: "سكاكين و ادوات جزاره",
+            subcategory: "سكاكين",
+            rating: 4.7,
+            reviews: 120,
+            images: ["https://g.top4top.io/p_3905ssa2n1.jpeg" ],
+            freeShipping: true,
+            description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
+        },{
             id: 2,
             name: "توكة رجالي كلاسيك",
             price: 200,
