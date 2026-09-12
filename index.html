@@ -2416,7 +2416,7 @@
             <button class="slider-btn next" onclick="manualSlide(1)">&#10095;</button>
         </section>
 
-        
+
         <div class="section-title">
             <span>نقترح اليك </span>
             <span class="category-breadcrumb" id="categoryBreadcrumb">موازين</span>
@@ -2741,10 +2741,23 @@
                     <a href="mailto:sunstore1969@gmail.com">التواصل معنا</a>
                 </div>
                 <div>
+                            <!-- =====  تواصل معنا===== -->
+
                     <h4>📞 تواصل معنا</h4>
-                    <a href="mailto:sunstore1969@gmail.com">📧 البريد الإلكتروني</a>
-                    <a href="https://wa.me/201550533369" target="_blank">📱 واتساب</a>
-                </div>
+
+ <a href="mailto:sunstore1969@gmail.com">
+     <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="إيميل" width="20"
+        height="20"> البريد الإلكتروني</a>
+
+ <a href="https://wa.me/201550533369" target="_blank">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب"
+         width="20" height="20"> واتساب</a>                   
+                     
+ <a href="https://www.facebook.com/BrightFutureOfScalesAndAutomation" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+         alt="فيسبوك" width="20" height="20"> فيسبوك </a>
+                
+        </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2026 <span style="color:#059669;">sun Store</span>. جميع الحقوق محفوظة</p>
@@ -2856,10 +2869,13 @@ const firebaseConfig = {
         const allProducts = [
                 <!-- ===== المنتجات ===== -->
 
+
+        <!-- ===== قسم سكاكين و ادوات جزاره من بدايه 1 ===== -->
+
         {
                 id: 1,
                 name: "هوك جزارة ٢٠٠كيلو جرام",
-                oldPrice: 1000,
+                oldPrice: 5000,
                 discountPercent: 10,
                 category: "سكاكين و ادوات جزاره",
                 subcategory: "سكاكين",
@@ -2871,6 +2887,22 @@ const firebaseConfig = {
             },
             {
                 id: 2,
+                name: "هوك جزارة ٢٠٠كيلو جرام",
+                oldPrice: 1000,
+                discountPercent: 10,
+                category: "سكاكين و ادوات جزاره",
+                subcategory: "سكاكين",
+                rating: 4.7,
+                reviews: 120,
+                images: ["https://g.top4top.io/p_3905ssa2n1.jpeg"],
+                freeShipping: true,
+                description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
+            },
+
+                    <!-- ===== قسم اكسسورات من بدايه 101===== -->
+
+            {
+                id: 101,
                 name: "توكة رجالي كلاسيك",
                 oldPrice: 280,
                 discountPercent: 29,
@@ -2884,8 +2916,10 @@ const firebaseConfig = {
                 description: "توكة جلدية كلاسيكية تناسب جميع المناسبات.",
                 colors: ["#2c3e50", "#e74c3c", "#2ecc71", "#f39c12"]
             },
+                    <!-- ===== قسم منتجات قطنيه من بدايه 201 ===== -->
+
             {
-                id: 3,
+                id: 201,
                 name: "تيشيرت قطني رياضي",
                 oldPrice: 420,
                 discountPercent: 29,
@@ -2899,8 +2933,9 @@ const firebaseConfig = {
                 sizes: ["S", "M", "L", "XL", "XXL"],
                 colors: ["#1a1a2e", "#2c3e50", "#e74c3c", "#3498db"]
             },
+                    <!-- ===== قسم الموازين من بدايه 301 ===== -->
             {
-                id: 4,
+                id: 301,
                 name: "هوك 50 كيلو جرام ",
                 oldPrice: 320,
                 discountPercent: 31,
@@ -2913,7 +2948,7 @@ const firebaseConfig = {
                 description: "هوك 50 جرام ل وزن الشنط و الاغراض المنزليه "
             },
             {
-                id: 5,
+                id: 302,
                 name: "هوك جزارة ٢٠٠كيلو جرام",
                 oldPrice: 900,
                 discountPercent: 11,
@@ -2926,7 +2961,7 @@ const firebaseConfig = {
                 description: "هوك 50 جرام ل وزن الشنط و الاغراض المنزليه "
             },
             {
-                id: 6,
+                id: 303,
                 name: "هوك ٣٠٠كيلو معدن ب الكامل تقيل",
                 oldPrice: 1350,
                 discountPercent: 7,
@@ -2939,7 +2974,7 @@ const firebaseConfig = {
                 description: "هوك ٣٠٠كيلو معدن ب الكامل تقيل"
             },
             {
-                id: 7,
+                id: 304,
                 name: "هوك 1 طن عموله ",
                 oldPrice: 3300,
                 discountPercent: 3,
@@ -2951,8 +2986,10 @@ const firebaseConfig = {
                 freeShipping: true,
                 description: "هوك 1 طن عموله ينفع فى وزن اللحمه و الشنط "
             },
+                    <!-- ===== قسم الكترونيات من بدايه 401 ===== -->
+
             {
-                id: 8,
+                id: 401,
                 name: "سماعة بلوتوث لاسلكية",
                 oldPrice: 310,
                 discountPercent: 29,
@@ -2963,20 +3000,8 @@ const firebaseConfig = {
                 images: ["https://i.imgur.com/8M7Nq2l.jpg", "https://i.imgur.com/9KpQ8Mn.jpg"],
                 freeShipping: true,
                 description: "سماعة بلوتوث بتقنية عزل الضوضاء وجودة صوت عالية."
-            },
-            {
-                id: 9,
-                name: "هوك جزارة ٢٠٠كيلو جرام",
-                oldPrice: 1000,
-                discountPercent: 10,
-                category: "سكاكين و ادوات جزاره",
-                subcategory: "سكاكين",
-                rating: 4.7,
-                reviews: 120,
-                images: ["https://g.top4top.io/p_3905ssa2n1.jpeg"],
-                freeShipping: true,
-                description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
             }
+
         ];
 
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
