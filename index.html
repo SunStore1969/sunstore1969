@@ -17,9 +17,6 @@
     <!-- EmailJS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-    <!-- Forminit -->
-    <script src="https://forminit.com/sdk/v1/forminit.js"></script>
-
     <style>
         /* ===== BASES ===== */
         * {
@@ -598,9 +595,7 @@
             box-shadow: 0 2px 10px rgba(5, 150, 105, 0.3);
         }
 
-        /* ============================================================ */
-        /* ===== الهيرو - صورة كاملة مستطيلة ===== */
-        /* ============================================================ */
+        /* ===== الهيرو ===== */
         .hero-slider {
             width: 100%;
             height: auto;
@@ -630,7 +625,6 @@
             object-fit: contain;
         }
 
-        /* ✅ الطبقة الداكنة خفيفة جداً */
         .hero-slider .slide .overlay {
             position: absolute;
             inset: 0;
@@ -650,22 +644,6 @@
             padding: 0 20px;
             color: #fff;
             text-align: center;
-        }
-
-        .hero-slider .slide h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-            font-weight: 800;
-        }
-
-        .hero-slider .slide h1 span {
-            color: #34d399;
-        }
-
-        .hero-slider .slide p {
-            font-size: 20px;
-            color: #cbd5e1;
-            font-weight: 300;
         }
 
         .hero-slider .slider-btn {
@@ -1438,7 +1416,6 @@
             display: block !important;
         }
 
-        /* ===== قسم الدفع ===== */
         .instapay-section {
             background: linear-gradient(135deg, #f0fdf4, #dcfce7);
             border: 2px solid #059669;
@@ -1475,11 +1452,6 @@
             border: 2px dashed #059669;
             direction: ltr;
             letter-spacing: 2px;
-        }
-
-        .instapay-section .instapay-number i {
-            margin: 0 8px;
-            color: #059669;
         }
 
         .instapay-section .copy-btn {
@@ -1672,7 +1644,6 @@
             color: #dc2626;
         }
 
-        /* ===== عرض الصورة في الرسالة ===== */
         .order-message-container {
             background: #f1f5f9;
             border-radius: 10px;
@@ -1716,7 +1687,6 @@
             box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.15);
         }
 
-        /* ===== زر العودة ===== */
         .back-to-top {
             position: fixed;
             bottom: 30px;
@@ -2017,12 +1987,6 @@
             .hero-slider {
                 height: auto;
             }
-            .hero-slider .slide h1 {
-                font-size: 24px;
-            }
-            .hero-slider .slide p {
-                font-size: 14px;
-            }
             .hero-slider .slider-btn {
                 font-size: 20px;
                 padding: 8px 12px;
@@ -2153,9 +2117,6 @@
             .product-card .discount-badge {
                 font-size: 9px;
                 padding: 2px 6px;
-            }
-            .hero-slider .slide h1 {
-                font-size: 20px;
             }
             .order-message-container {
                 min-height: 180px !important;
@@ -2308,7 +2269,7 @@
     <!-- ===== شريط الإعلانات ===== -->
     <div style="background: linear-gradient(90deg, #059669, #047857, #059669); background-size: 200% 100%; animation: shimmer 4s ease-in-out infinite; color: #fff; padding: 10px 0; text-align: center; font-weight: 700; font-size: 16px; overflow: hidden; position: relative; z-index: 99999; direction: ltr;">
         <marquee behavior="scroll" direction="left" scrollamount="6" style="color:#fff; font-size:17px;">
-            🌿 <span style="color:#a7f3d0;">عروض كل يوم </span> - عروض لا تُفوت! 🌿 &nbsp;|&nbsp; 🛍️ تسوق الآن واستمتع بأفضل الأسعار 🛍️
+             <span style="color:#a7f3d0;"> خصومات رمضان</span>
         </marquee>
     </div>
     <style>
@@ -2426,15 +2387,14 @@
 
         <!-- ===== شريط الأقسام ===== -->
         <div class="categories-bar" id="categoriesBar">
-            <button class="cat-btn active" onclick="filterProducts('موازين')">موازين  </button>
-            <button class="cat-btn active" onclick="filterProducts('ماكينات التعبئه و التحكم الألى')">ماكينات التعبئه و التحكم الألى</button>
+            <button class="cat-btn active" onclick="filterProducts('موازين')">موازين </button>
             <button class="cat-btn" onclick="filterProducts('سكاكين و ادوات جزاره')">سكاكين و ادوات جزاره </button>
             <button class="cat-btn" onclick="filterProducts('إلكترونيات')"> إلكترونيات</button>
             <button class="cat-btn" onclick="filterProducts('منتجات قطنيه')"> منتجات قطنيه</button>
             <button class="cat-btn" onclick="filterProducts('اكسسوارات')">اكسسوارات</button>
         </div>
 
-        <!-- ===== الهيرو - صور كاملة مستطيلة ===== -->
+        <!-- ===== الهيرو ===== -->
         <section class="hero-slider" id="heroSlider">
             <div class="slide active">
                 <img src="https://i.imgpeek.com/SEoLgXTzK2PD" alt="Sun Store Slide 1">
@@ -2448,16 +2408,6 @@
             </div>
             <div class="slide">
                 <img src="https://i.imgpeek.com/C--gwaDYMeTj" alt="Sun Store Slide 3">
-                <div class="overlay"></div>
-                <div class="content"></div>
-            </div>
-            <div class="slide">
-                <img src="https://i.imgpeek.com/H7FtmmawAltx" alt="Sun Store Slide 4">
-                <div class="overlay"></div>
-                <div class="content"></div>
-            </div>
-            <div class="slide">
-                <img src="https://i.imgpeek.com/Qh4DA-r99Doy" alt="Sun Store Slide 5">
                 <div class="overlay"></div>
                 <div class="content"></div>
             </div>
@@ -2538,7 +2488,7 @@
                     <p>يلتزم متجر sun Store بحماية بيانات جميع المستخدمين، وعدم مشاركة البيانات مع أي جهة إلا بما يسمح به القانون.</p>
                     <p>جميع بيانات الدفع يتم تشفيرها باستخدام تقنيات آمنة.</p>
                     <p>يمكنك طلب حذف بياناتك في أي وقت عبر التواصل معنا.</p>
-                    <p>📧 <strong>takamulis26@gmail.com</strong></p>
+                    <p>📧 <strong>sunstore1969@gmail.com</strong></p>
                 </div>
             </div>
         </div>
@@ -2552,7 +2502,7 @@
                 </div>
                 <div class="privacy-modal-body">
                     <div style="text-align:center;margin-bottom:20px;">
-                        <img src="https://g.top4top.io/p_3889jf2jz1.png" alt="sun Store" style="width:80px;height:80px;border-radius:50%;object-fit:contain;background:#fff;padding:8px;border:3px solid #059669;">
+                        <img src="https://i.imgpeek.com/L3jbI_XDcIJK" alt="sun Store" style="width:80px;height:80px;border-radius:50%;object-fit:contain;background:#fff;padding:8px;border:3px solid #059669;">
                         <h2 style="color:#111;margin-top:12px;">🛍️ <span style="color:#059669;">sun Store</span></h2>
                         <p style="color:#666;font-size:14px;">متجرك الأول لكل المنتجات في مصر</p>
                     </div>
@@ -2561,7 +2511,7 @@
                     <h3>💪 رسالتنا</h3>
                     <p style="line-height:1.8;">نهدف إلى توفير منتجات عالية الجودة في جميع المجالات، مع ضمان تجربة تسوق سهلة وآمنة وسريعة.</p>
                     <br>
-                    <p>📧 <strong>takamulis26@gmail.com</strong></p>
+                    <p>📧 <strong>sunstore1969@gmail.com</strong></p>
                     <p>📱 <strong>+201550533369</strong></p>
                 </div>
             </div>
@@ -2788,11 +2738,11 @@
                     <a href="#" onclick="filterProducts('all')">المنتجات</a>
                     <a href="#" onclick="showPrivacyPolicy(event)">سياسة الخصوصية</a>
                     <a href="#" onclick="showAboutModal(event)">من نحن</a>
-                    <a href="mailto:takamulis26@gmail.com">التواصل معنا</a>
+                    <a href="mailto:sunstore1969@gmail.com">التواصل معنا</a>
                 </div>
                 <div>
                     <h4>📞 تواصل معنا</h4>
-                    <a href="mailto:takamulis26@gmail.com">📧 البريد الإلكتروني</a>
+                    <a href="mailto:sunstore1969@gmail.com">📧 البريد الإلكتروني</a>
                     <a href="https://wa.me/201550533369" target="_blank">📱 واتساب</a>
                 </div>
             </div>
@@ -2805,10 +2755,7 @@
     <!-- ============================================================ -->
     <!-- جافاسكريبت -->
     <!-- ============================================================ -->
-    <script>
-        // ============================================================
-        // جافاسكريبت - متجر sun Store
-        // ============================================================
+     <script>
 
         (function fixEnvironment() {
             if (window.location.protocol === 'file:') {
@@ -2829,16 +2776,16 @@
             }
         })();
 
+        const firebaseConfig = {
+            apiKey: "AIzaSyC-r27FKI-t4LC6mNx3Ouf_34DZ9aHl72g",
+            authDomain: "takamul-4d702.firebaseapp.com",
+            projectId: "takamul-4d702",
+            storageBucket: "takamul-4d702.firebasestorage.app",
+            messagingSenderId: "257406551644",
+            appId: "1:257406551644:web:b5ff382234d80d1400c899",
+            measurementId: "G-DR0M1VDN98"
+        };
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBUavTVEbAIyRdphPZjt5JjP_QXmk5Uh0Q",
-  authDomain: "sun-store-a47bd.firebaseapp.com",
-  projectId: "sun-store-a47bd",
-  storageBucket: "sun-store-a47bd.firebasestorage.app",
-  messagingSenderId: "837468266838",
-  appId: "1:837468266838:web:8e9b841d92ced20d4076f7",
-  measurementId: "G-RR6BD1BY6G"
-};
         firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
         const googleProvider = new firebase.auth.GoogleAuthProvider();
@@ -2851,7 +2798,14 @@ const firebaseConfig = {
         const TEMPLATE_ID = "template_iq9pnen";
         const STORE_EMAIL = "sunstore1969@gmail.com";
 
-        let forminitReady = false;
+        // ===== Formcarry Configuration =====
+        const FORMCARRY_ENDPOINT = "https://formcarry.com/s/aDczTBUAuJr";
+        let formcarryReady = true;
+        console.log('✅ Formcarry ready:', FORMCARRY_ENDPOINT);
+
+        // ===== ImgBB Configuration =====
+        const IMGBB_API_KEY = "37a86645200093eb20fc327b70f33e31";
+        console.log('✅ ImgBB ready');
 
         try {
             emailjs.init({ publicKey: PUBLIC_KEY });
@@ -2860,331 +2814,172 @@ const firebaseConfig = {
             console.warn('⚠️ EmailJS initialization failed:', e);
         }
 
-        let forminit = null;
-        const FORM_ID = "xxdqj8abktj";
-        const REDIRECT_URL = "https://forminit.com/thank-you";
-
-        try {
-            if (typeof window.forminit !== 'undefined') {
-                forminit = window.forminit;
-                forminitReady = true;
-                console.log('✅ Forminit ready (window.forminit)');
-            } else if (typeof Forminit !== 'undefined') {
-                forminit = new Forminit();
-                forminitReady = true;
-                console.log('✅ Forminit initialized with new Forminit()');
-            } else {
-                console.warn('⚠️ Forminit not found, will use fallback');
-                forminit = {
-                    submit: function(formId, formData, options) {
-                        console.log('⚠️ Forminit fallback - would submit:', formId, formData);
-                        return Promise.resolve({ success: true, message: 'Fallback submission' });
-                    }
-                };
-                forminitReady = false;
-            }
-        } catch (e) {
-            console.warn('⚠️ Forminit initialization error:', e);
-            forminit = {
-                submit: function(formId, formData, options) {
-                    console.log('⚠️ Forminit fallback - would submit:', formId, formData);
-                    return Promise.resolve({ success: true, message: 'Fallback submission' });
-                }
-            };
-            forminitReady = false;
-        }
-
         let currentUser = null;
         let userProfile = JSON.parse(localStorage.getItem('userProfile')) || {};
 
- const allProducts = [
-     {
-            id: 1,
-            name: "صطور 1000 جنيه",
-            price: 1000,
-            oldPrice: 1050,
-            discount: "10%",
-            category: "سكاكين و ادوات جزاره",
-            subcategory: "سكاكين",
-            rating: 4.7,
-            reviews: 120,
-            images: ["https://i.imgpeek.com/34bvq81m4jGC" ],
-            freeShipping: true,
-            description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
-        },
-         {
-            id: 2,
-            name: "هوك جزارة ٢٠٠كيلو جرام",
-            price: 1000,
-            oldPrice: 1050,
-            discount: "10%",
-            category: "سكاكين و ادوات جزاره",
-            subcategory: "سكاكين",
-            rating: 4.7,
-            reviews: 120,
-            images: ["https://g.top4top.io/p_3905ssa2n1.jpeg" ],
-            freeShipping: true,
-            description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
-        },
-           {
-            id: 3,
-            name: "هوك جزارة ٢٠٠كيلو جرام",
-            price: 1000,
-            oldPrice: 1050,
-            discount: "10%",
-            category: "سكاكين و ادوات جزاره",
-            subcategory: "سكاكين",
-            rating: 4.7,
-            reviews: 120,
-            images: ["https://g.top4top.io/p_3905ssa2n1.jpeg" ],
-            freeShipping: true,
-            description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
-        },
-           {
-            id: 4,
-            name: "هوك جزارة ٢٠٠كيلو جرام",
-            price: 1000,
-            oldPrice: 1050,
-            discount: "10%",
-            category: "سكاكين و ادوات جزاره",
-            subcategory: "سكاكين",
-            rating: 4.7,
-            reviews: 120,
-            images: ["https://g.top4top.io/p_3905ssa2n1.jpeg" ],
-            freeShipping: true,
-            description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
-        },
-           {
-            id: 5,
-            name: "هوك جزارة ٢٠٠كيلو جرام",
-            price: 1000,
-            oldPrice: 1050,
-            discount: "10%",
-            category: "سكاكين و ادوات جزاره",
-            subcategory: "سكاكين",
-            rating: 4.7,
-            reviews: 120,
-            images: ["https://g.top4top.io/p_3905ssa2n1.jpeg" ],
-            freeShipping: true,
-            description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
-        },
-           {
-            id: 6,
-            name: "هوك جزارة ٢٠٠كيلو جرام",
-            price: 1000,
-            oldPrice: 1050,
-            discount: "10%",
-            category: "سكاكين و ادوات جزاره",
-            subcategory: "سكاكين",
-            rating: 4.7,
-            reviews: 120,
-            images: ["https://g.top4top.io/p_3905ssa2n1.jpeg" ],
-            freeShipping: true,
-            description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
-        },
-           {
-            id: 7,
-            name: "هوك جزارة ٢٠٠كيلو جرام",
-            price: 1000,
-            oldPrice: 1050,
-            discount: "10%",
-            category: "سكاكين و ادوات جزاره",
-            subcategory: "سكاكين",
-            rating: 4.7,
-            reviews: 120,
-            images: ["https://g.top4top.io/p_3905ssa2n1.jpeg" ],
-            freeShipping: true,
-            description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
-        },
-           {
-            id: 8,
-            name: "هوك جزارة ٢٠٠كيلو جرام",
-            price: 1000,
-            oldPrice: 1050,
-            discount: "10%",
-            category: "سكاكين و ادوات جزاره",
-            subcategory: "سكاكين",
-            rating: 4.7,
-            reviews: 120,
-            images: ["https://g.top4top.io/p_3905ssa2n1.jpeg" ],
-            freeShipping: true,
-            description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
-        },
-           {
-            id: 9,
-            name: "هوك جزارة ٢٠٠كيلو جرام",
-            price: 1000,
-            oldPrice: 1050,
-            discount: "10%",
-            category: "سكاكين و ادوات جزاره",
-            subcategory: "سكاكين",
-            rating: 4.7,
-            reviews: 120,
-            images: ["https://g.top4top.io/p_3905ssa2n1.jpeg" ],
-            freeShipping: true,
-            description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
-        },
-           {
-            id: 10,
-            name: "هوك جزارة ٢٠٠كيلو جرام",
-            price: 1000,
-            oldPrice: 1050,
-            discount: "10%",
-            category: "سكاكين و ادوات جزاره",
-            subcategory: "سكاكين",
-            rating: 4.7,
-            reviews: 120,
-            images: ["https://g.top4top.io/p_3905ssa2n1.jpeg" ],
-            freeShipping: true,
-            description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
-        },
-           {
-            id: 11,
-            name: "هوك جزارة ٢٠٠كيلو جرام",
-            price: 1000,
-            oldPrice: 1050,
-            discount: "10%",
-            category: "سكاكين و ادوات جزاره",
-            subcategory: "سكاكين",
-            rating: 4.7,
-            reviews: 120,
-            images: ["https://g.top4top.io/p_3905ssa2n1.jpeg" ],
-            freeShipping: true,
-            description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
-        },
-           {
-            id: 12,
-            name: "هوك جزارة ٢٠٠كيلو جرام",
-            price: 1000,
-            oldPrice: 1050,
-            discount: "10%",
-            category: "سكاكين و ادوات جزاره",
-            subcategory: "سكاكين",
-            rating: 4.7,
-            reviews: 120,
-            images: ["https://g.top4top.io/p_3905ssa2n1.jpeg" ],
-            freeShipping: true,
-            description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
-        },
-        {
-            id: 9,
-            name: "هوك جزارة ٢٠٠كيلو جرام",
-            price: 800,
-            oldPrice: 900,
-            discount: "5%",
-            category: "ماكينات التعبئه و التحكم الألى",
-            subcategory: "ماكينات التعبئه و التحكم الألى ",
-            rating: 4.7,
-            reviews: 120,
-            images: ["https://i.imgpeek.com/Qh4DA-r99Doy" ],
-            freeShipping: true,
-            description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
-        },{
-            id: 2,
-            name: "توكة رجالي كلاسيك",
-            price: 200,
-            oldPrice: 280,
-            discount: "28%",
-            category: "اكسسوارات",
-            subcategory: "توكه",
-            rating: 4.5,
-            reviews: 95,
-            images: ["https://i.imgpeek.com/sCYts4cTeWgc", "https://i.imgur.com/8M7Nq2l.jpg"],
-            video: "https://savedly.net/f/csrsjmmu",
-            freeShipping: true,
-            description: "توكة جلدية كلاسيكية تناسب جميع المناسبات.",
-            colors: ["#2c3e50", "#e74c3c", "#2ecc71", "#f39c12"]
-        }, {
-            id: 3,
-            name: "تيشيرت قطني رياضي",
-            price: 300,
-            oldPrice: 420,
-            discount: "29%",
-            category: "منتجات قطنيه",
-            subcategory: "تيشيرتات",
-            rating: 4.6,
-            reviews: 85,
-            images: ["https://i.imgur.com/5HpQ8Jk.jpg", "https://i.imgur.com/4GvH3Wq.jpg", "https://i.imgur.com/8M7Nq2l.jpg"],
-            freeShipping: true,
-            description: "تيشيرت قطني مريح مناسب للرياضة والاستخدام اليومي.",
-            sizes: ["S", "M", "L", "XL", "XXL"],
-            colors: ["#1a1a2e", "#2c3e50", "#e74c3c", "#3498db"]
-        }, {
-            id: 4,
-            name: "هوك 50 كيلو جرام ",
-            price: 220,
-            oldPrice: 320,
-            discount: "26%",
-            category: "موازين",
-            subcategory: "موازين",
-            rating: 4.5,
-            reviews: 78,
-            images: ["https://l.top4top.io/p_390544gxf1.jpeg"],
-            freeShipping: true,
-            description: "هوك 50 جرام ل وزن الشنط و الاغراض المنزليه "
-        },  
-        {
-            id: 5,
-            name: "هوك جزارة ٢٠٠كيلو جرام",
-            price: 800,
-            oldPrice: 900,
-            discount: "26%",
-            category: "موازين",
-            subcategory: "موازين",
-            rating: 4.5,
-            reviews: 78,
-            images: ["https://g.top4top.io/p_3905ssa2n1.jpeg" ],
-            freeShipping: true,
-            description: "هوك 50 جرام ل وزن الشنط و الاغراض المنزليه "
-        },
-                {
-            id: 6,
-            name: "هوك ٣٠٠كيلو معدن ب الكامل تقيل",
-            price: 1250,
-            oldPrice: 1350,
-            discount:  "10%",
-            category: "موازين",
-            subcategory: "موازين",
-            rating: 4.5,
-            reviews: 78,
-            images: ["https://d.top4top.io/p_3905yymz42.jpeg" ,"https://c.top4top.io/p_3905fdar31.jpeg" ],
-            freeShipping: true,
-            description: "هوك ٣٠٠كيلو معدن ب الكامل تقيل"
-        },
-            {
-            id: 7,
-            name: "هوك 1 طن عموله ",
-            price: 3200,
-            oldPrice: 3300,
-            discount:  "10%",
-            category: "موازين",
-            subcategory: "موازين",
-            rating: 4.5,
-            reviews: 78,
-            images: ["https://b.top4top.io/p_3905x5qfx1.jpeg" ,"https://c.top4top.io/p_3905g4vur2.jpeg" ],
-            freeShipping: true,
-            description: "هوك 1 طن عموله ينفع فى وزن اللحمه و الشنط "
-        },
-      {
-            id: 8,
-            name: "سماعة بلوتوث لاسلكية",
-            price: 220,
-            oldPrice: 310,
-            discount: "29%",
-            category: "إلكترونيات",
-            subcategory: "موبايل",
-            rating: 4.4,
-            reviews: 68,
-            images: ["https://i.imgur.com/8M7Nq2l.jpg", "https://i.imgur.com/9KpQ8Mn.jpg"],
-            freeShipping: true,
-            description: "سماعة بلوتوث بتقنية عزل الضوضاء وجودة صوت عالية."
+ 
+        function getProductPriceInfo(product) {
+            const oldPrice = Number(product.oldPrice) || 0;
+            const discountPercent = Number(product.discountPercent) || 0;
+
+            if (!oldPrice || oldPrice <= 0) {
+                return {
+                    price: Number(product.price) || 0,
+                    oldPrice: null,
+                    discount: null
+                };
+            }
+
+            if (!discountPercent || discountPercent <= 0) {
+                return {
+                    price: oldPrice,
+                    oldPrice: null,
+                    discount: null
+                };
+            }
+
+            const discountAmount = (oldPrice * discountPercent) / 100;
+            const finalPrice = Math.round((oldPrice - discountAmount) * 100) / 100;
+
+            return {
+                price: finalPrice,
+                oldPrice: oldPrice,
+                discount: {
+                    percent: discountPercent,
+                    text: `${discountPercent}%`,
+                    amount: discountAmount
+                }
+            };
         }
-     ];
+
+        const allProducts = [
+            {
+                id: 1,
+                name: "هوك جزارة ٢٠٠كيلو جرام",
+                oldPrice: 1000,
+                discountPercent: 10,
+                category: "سكاكين و ادوات جزاره",
+                subcategory: "سكاكين",
+                rating: 4.7,
+                reviews: 120,
+                images: ["https://g.top4top.io/p_3905ssa2n1.jpeg"],
+                freeShipping: true,
+                description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
+            },
+            {
+                id: 2,
+                name: "توكة رجالي كلاسيك",
+                oldPrice: 280,
+                discountPercent: 29,
+                category: "اكسسوارات",
+                subcategory: "توكه",
+                rating: 4.5,
+                reviews: 95,
+                images: ["https://i.imgpeek.com/sCYts4cTeWgc", "https://i.imgur.com/8M7Nq2l.jpg"],
+                video: "https://savedly.net/f/csrsjmmu",
+                freeShipping: true,
+                description: "توكة جلدية كلاسيكية تناسب جميع المناسبات.",
+                colors: ["#2c3e50", "#e74c3c", "#2ecc71", "#f39c12"]
+            },
+            {
+                id: 3,
+                name: "تيشيرت قطني رياضي",
+                oldPrice: 420,
+                discountPercent: 29,
+                category: "منتجات قطنيه",
+                subcategory: "تيشيرتات",
+                rating: 4.6,
+                reviews: 85,
+                images: ["https://i.imgur.com/5HpQ8Jk.jpg", "https://i.imgur.com/4GvH3Wq.jpg", "https://i.imgur.com/8M7Nq2l.jpg"],
+                freeShipping: true,
+                description: "تيشيرت قطني مريح مناسب للرياضة والاستخدام اليومي.",
+                sizes: ["S", "M", "L", "XL", "XXL"],
+                colors: ["#1a1a2e", "#2c3e50", "#e74c3c", "#3498db"]
+            },
+            {
+                id: 4,
+                name: "هوك 50 كيلو جرام ",
+                oldPrice: 320,
+                discountPercent: 31,
+                category: "موازين",
+                subcategory: "موازين",
+                rating: 4.5,
+                reviews: 78,
+                images: ["https://l.top4top.io/p_390544gxf1.jpeg"],
+                freeShipping: true,
+                description: "هوك 50 جرام ل وزن الشنط و الاغراض المنزليه "
+            },
+            {
+                id: 5,
+                name: "هوك جزارة ٢٠٠كيلو جرام",
+                oldPrice: 900,
+                discountPercent: 11,
+                category: "موازين",
+                subcategory: "موازين",
+                rating: 4.5,
+                reviews: 78,
+                images: ["https://g.top4top.io/p_3905ssa2n1.jpeg"],
+                freeShipping: true,
+                description: "هوك 50 جرام ل وزن الشنط و الاغراض المنزليه "
+            },
+            {
+                id: 6,
+                name: "هوك ٣٠٠كيلو معدن ب الكامل تقيل",
+                oldPrice: 1350,
+                discountPercent: 7,
+                category: "موازين",
+                subcategory: "موازين",
+                rating: 4.5,
+                reviews: 78,
+                images: ["https://d.top4top.io/p_3905yymz42.jpeg", "https://c.top4top.io/p_3905fdar31.jpeg"],
+                freeShipping: true,
+                description: "هوك ٣٠٠كيلو معدن ب الكامل تقيل"
+            },
+            {
+                id: 7,
+                name: "هوك 1 طن عموله ",
+                oldPrice: 3300,
+                discountPercent: 3,
+                category: "موازين",
+                subcategory: "موازين",
+                rating: 4.5,
+                reviews: 78,
+                images: ["https://b.top4top.io/p_3905x5qfx1.jpeg", "https://c.top4top.io/p_3905g4vur2.jpeg"],
+                freeShipping: true,
+                description: "هوك 1 طن عموله ينفع فى وزن اللحمه و الشنط "
+            },
+            {
+                id: 8,
+                name: "سماعة بلوتوث لاسلكية",
+                oldPrice: 310,
+                discountPercent: 29,
+                category: "إلكترونيات",
+                subcategory: "موبايل",
+                rating: 4.4,
+                reviews: 68,
+                images: ["https://i.imgur.com/8M7Nq2l.jpg", "https://i.imgur.com/9KpQ8Mn.jpg"],
+                freeShipping: true,
+                description: "سماعة بلوتوث بتقنية عزل الضوضاء وجودة صوت عالية."
+            },
+            {
+                id: 9,
+                name: "هوك جزارة ٢٠٠كيلو جرام",
+                oldPrice: 1000,
+                discountPercent: 10,
+                category: "سكاكين و ادوات جزاره",
+                subcategory: "سكاكين",
+                rating: 4.7,
+                reviews: 120,
+                images: ["https://g.top4top.io/p_3905ssa2n1.jpeg"],
+                freeShipping: true,
+                description: "سكين جزارة احترافي مصنوع من أجود أنواع الفولاذ المقاوم للصدأ."
+            }
+        ];
 
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
         let currentCategory = 'موازين';
         let currentDetailProductId = null;
-        let uploadedImageBase64 = null;
+        let uploadedImageUrl = null; // ✅ الرابط من ImgBB
         let uploadedImageName = null;
         let selectedSizes = {};
         let selectedColors = {};
@@ -3555,8 +3350,15 @@ const firebaseConfig = {
                 products.forEach(product => {
                     const stars = '⭐'.repeat(Math.floor(product.rating)) + (product.rating % 1 >= 0.5 ?
                         '⭐' : '');
-                    const discountBadge = product.discount ?
-                        `<span class="discount-badge">${product.discount}</span>` : '';
+
+                    const priceInfo = getProductPriceInfo(product);
+                    const finalPrice = priceInfo.price;
+                    const oldPrice = priceInfo.oldPrice;
+                    const discountInfo = priceInfo.discount;
+
+                    const discountBadge = discountInfo ?
+                        `<span class="discount-badge">${discountInfo.text}</span>` : '';
+
                     const freeShipping = product.freeShipping ?
                         `<span class="free-shipping">🚚 التوصيل على حسب المحافظه</span>` : '';
                     const primeBadge = product.rating >= 4.8 ? `<span class="prime-badge">⭐ Prime</span>` :
@@ -3619,9 +3421,9 @@ const firebaseConfig = {
                                 <h3>${product.name}</h3>
                                 <div class="rating"><span class="stars">${stars}</span><span class="count">(${product.reviews || 0})</span></div>
                                 <div class="price-container">
-                                    <span class="current-price">${product.price} ج.م</span>
-                                    ${product.oldPrice ? `<span class="old-price">${product.oldPrice} ج.م</span>` : ''}
-                                    ${product.discount ? `<span class="discount-percent">${product.discount}</span>` : ''}
+                                    <span class="current-price">${finalPrice} ج.م</span>
+                                    ${oldPrice ? `<span class="old-price">${oldPrice} ج.م</span>` : ''}
+                                    ${discountInfo ? `<span class="discount-percent">${discountInfo.text}</span>` : ''}
                                 </div>
                                 ${freeShipping}
                                 ${primeBadge}
@@ -3844,7 +3646,30 @@ const firebaseConfig = {
             document.body.removeChild(textarea);
         }
 
-        function previewImage(event) {
+        // ============================================================
+        // ✅ دالة رفع الصورة على ImgBB (جديدة)
+        // ============================================================
+        async function uploadToImgBB(file) {
+            const formData = new FormData();
+            formData.append('image', file);
+            
+            const response = await fetch(`https://api.imgbb.com/1/upload?key=${IMGBB_API_KEY}`, {
+                method: 'POST',
+                body: formData
+            });
+            
+            const data = await response.json();
+            if (data.success && data.data && data.data.url) {
+                return data.data.url;
+            } else {
+                throw new Error(data.error?.message || 'فشل رفع الصورة على ImgBB');
+            }
+        }
+
+        // ============================================================
+        // ✅ معاينة الصورة + رفعها على ImgBB
+        // ============================================================
+        async function previewImage(event) {
             const file = event.target.files[0];
             if (!file) return;
 
@@ -3856,19 +3681,33 @@ const firebaseConfig = {
             fileNameText.textContent = file.name;
             fileName.classList.add('show');
 
+            // عرض محلي فوري
             const reader = new FileReader();
             reader.onload = function(e) {
                 previewImg.src = e.target.result;
                 preview.classList.add('show');
-                uploadedImageBase64 = e.target.result;
-                uploadedImageName = file.name;
-                updateOrderSummary();
             };
             reader.readAsDataURL(file);
 
-            showNotification('✅ تم رفع صورة الإيصال: ' + file.name, 'success');
+            // رفع على ImgBB
+            showNotification('⏳ جاري رفع الصورة على ImgBB...', '');
+            try {
+                const imageUrl = await uploadToImgBB(file);
+                uploadedImageUrl = imageUrl;
+                uploadedImageName = file.name;
+                showNotification('✅ تم رفع الصورة بنجاح!', 'success');
+                updateOrderSummary();
+            } catch (error) {
+                console.error('❌ فشل رفع الصورة:', error);
+                showNotification('❌ فشل رفع الصورة: ' + error.message, 'error');
+                uploadedImageUrl = null;
+                uploadedImageName = null;
+            }
         }
 
+        // ============================================================
+        // ✅ تحديث ملخص الطلب - مع رابط قابل للضغط
+        // ============================================================
         function updateOrderSummary() {
             const container = document.getElementById('orderMessage');
             const hiddenInput = document.getElementById('hiddenOrderMessage');
@@ -3914,12 +3753,12 @@ const firebaseConfig = {
             msgHTML += `🏠 العنوان: ${address}<br>`;
             msgHTML += '<br>' + '━'.repeat(35) + '<br>';
 
-            if (uploadedImageBase64) {
+            // ✅ عرض الرابط القابل للضغط
+            if (uploadedImageUrl) {
                 msgHTML += '<br>📎 صورة إيصال التحويل:<br>';
+                msgHTML += `<a href="${uploadedImageUrl}" target="_blank" style="color:#059669;font-weight:bold;font-size:15px;text-decoration:underline;">📸 اضغط هنا لعرض صورة الإيصال</a><br>`;
                 msgHTML += `📁 اسم الملف: ${uploadedImageName || 'إيصال'}<br>`;
-                msgHTML += '<br>🖼️ الصورة:<br>';
-                msgHTML +=
-                    `<img src="${uploadedImageBase64}" alt="إيصال التحويل" style="max-width:100%;max-height:250px;border-radius:8px;border:1px solid #e2e8f0;margin:10px 0;" /><br>`;
+                msgHTML += `<span style="font-size:11px;color:#94a3b8;direction:ltr;display:block;word-break:break-all;">${uploadedImageUrl}</span>`;
             } else {
                 msgHTML += '<br>⚠️ لم يتم رفع صورة الإيصال بعد<br>';
             }
@@ -3982,7 +3821,7 @@ const firebaseConfig = {
         }
 
         function showShippingForm() {
-            if (!uploadedImageBase64) {
+            if (!uploadedImageUrl) {
                 showNotification('⚠️ يرجى رفع صورة إيصال التحويل أولاً', 'error');
                 const uploadSection = document.getElementById('uploadSection');
                 const errorMsg = document.createElement('div');
@@ -4068,29 +3907,38 @@ const firebaseConfig = {
             document.getElementById('aboutModal').classList.remove('open');
         }
 
-        async function submitOrderWithForminit(formData) {
+        // ============================================================
+        // Formcarry
+        // ============================================================
+        async function submitOrderWithFormcarry(formData) {
             try {
-                if (forminitReady && forminit && typeof forminit.submit === 'function') {
-                    const result = await forminit.submit(FORM_ID, formData, {
-                        redirect: REDIRECT_URL
-                    });
-                    if (result.error) {
-                        console.error('❌ خطأ في Forminit:', result.error);
-                        return { success: false, error: result.error };
+                const response = await fetch(FORMCARRY_ENDPOINT, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
                     }
-                    console.log('✅ تم إرسال الطلب بنجاح عبر Forminit!');
-                    return { success: true, data: result };
-                } else {
-                    console.warn('⚠️ Forminit غير متاح، استخدام EmailJS فقط');
-                    return { success: true, message: 'تم الإرسال عبر EmailJS فقط' };
+                });
+
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    console.error('❌ خطأ في Formcarry:', errorText);
+                    return { success: false, error: errorText };
                 }
+
+                const result = await response.json().catch(() => ({ success: true }));
+                console.log('✅ تم إرسال الطلب بنجاح عبر Formcarry!', result);
+                return { success: true, data: result };
             } catch (error) {
-                console.error('❌ فشل إرسال الطلب عبر Forminit:', error);
+                console.error('❌ فشل إرسال الطلب عبر Formcarry:', error);
                 return { success: false, error: error.message };
             }
         }
 
-        function sendOrderEmail(name, email, phone, address, total, productsList, totalItems, imageBase64, imageName,
+        // ============================================================
+        // ✅ sendOrderEmail - مع رابط ImgBB
+        // ============================================================
+        function sendOrderEmail(name, email, phone, address, total, productsList, totalItems, imageUrl, imageName,
             governorate) {
             let message = `🛍️ طلب جديد من متجر sun Store!\n\n`;
             message += `👤 اسم العميل: ${name}\n`;
@@ -4107,12 +3955,11 @@ const firebaseConfig = {
             message += `🕐 وقت الطلب: ${new Date().toLocaleTimeString('ar-EG')}\n\n`;
             message += `━`.repeat(35) + `\n`;
 
-            if (imageBase64) {
+            if (imageUrl) {
                 message += `\n📎 صورة إيصال التحويل:\n`;
                 message += `📁 اسم الملف: ${imageName || 'إيصال'}\n`;
-                message += `\n📸 الصورة:\n`;
-                message +=
-                    `<img src="${imageBase64}" alt="إيصال التحويل" style="max-width:100%;max-height:300px;border:1px solid #ccc;border-radius:8px;" />\n`;
+                message += `📸 رابط الصورة: ${imageUrl}\n`;
+                message += `\n👆 اضغط على الرابط لعرض الصورة\n`;
             } else {
                 message += `\n⚠️ لم يتم رفع صورة الإيصال\n`;
             }
@@ -4128,11 +3975,14 @@ const firebaseConfig = {
                 total: total + " ج.م",
                 store_name: "sun Store",
                 year: new Date().getFullYear(),
-                attachment: imageBase64 || '',
+                attachment: imageUrl || '',
                 attachment_name: imageName || 'receipt.jpg'
             });
         }
 
+        // ============================================================
+        // ✅ contactForm.submit - مع ImgBB URL
+        // ============================================================
         const contactForm = document.getElementById('contactForm');
         const contactStatus = document.getElementById('contactStatus');
         const contactSubmitBtn = document.getElementById('contactSubmitBtn');
@@ -4144,6 +3994,11 @@ const firebaseConfig = {
                 const fileInput = document.getElementById('paymentImage');
                 if (!fileInput.files || fileInput.files.length === 0) {
                     showNotification('⚠️ يرجى رفع صورة إيصال التحويل', 'error');
+                    return;
+                }
+
+                if (!uploadedImageUrl) {
+                    showNotification('⏳ يرجى الانتظار حتى يتم رفع الصورة على ImgBB', 'error');
                     return;
                 }
 
@@ -4163,32 +4018,21 @@ const firebaseConfig = {
 
                 const formData = new FormData(contactForm);
                 const file = fileInput.files[0];
-                let imageBase64 = null;
+                let imageUrl = uploadedImageUrl;
                 let imageName = file.name;
 
                 if (file) {
                     formData.append('fi-file-receipt', file);
                     formData.append('payment_receipt', file);
-
-                    imageBase64 = await new Promise((resolve) => {
-                        const reader = new FileReader();
-                        reader.onload = (e) => resolve(e.target.result);
-                        reader.readAsDataURL(file);
-                    });
                 }
 
                 formData.append('fi-sender-fullName', fullName);
 
-                const messageContainer = document.getElementById('orderMessage');
-                if (messageContainer) {
-                    const tempDiv = document.createElement('div');
-                    tempDiv.innerHTML = messageContainer.innerHTML;
-                    const textContent = tempDiv.textContent || tempDiv.innerText || '';
-                    formData.append('fi-text-message', textContent);
-                } else {
-                    const hiddenMsg = document.getElementById('hiddenOrderMessage');
-                    if (hiddenMsg) formData.append('fi-text-message', hiddenMsg.value);
-                }
+                // ✅ نضيف الرابط في الرسالة
+                formData.append('fi-text-message', 
+                    `📸 رابط صورة الإيصال: ${imageUrl}\n\n` +
+                    `👆 اضغط على الرابط لعرض الصورة`
+                );
 
                 let total = 0;
                 let totalItems = 0;
@@ -4206,23 +4050,23 @@ const firebaseConfig = {
                 });
 
                 try {
-                    const result = await submitOrderWithForminit(formData);
+                    const result = await submitOrderWithFormcarry(formData);
 
                     if (!result.success) {
-                        console.warn('⚠️ فشل Forminit، سيتم الإرسال عبر EmailJS فقط');
+                        console.warn('⚠️ فشل Formcarry، سيتم الإرسال عبر EmailJS فقط');
                     } else {
-                        console.log('✅ تم الإرسال عبر Forminit بنجاح');
+                        console.log('✅ تم الإرسال عبر Formcarry بنجاح');
                     }
 
                     try {
                         await sendOrderEmail(fullName, email, phone, address, total, productsList, totalItems,
-                            imageBase64, imageName, governorate);
+                            imageUrl, imageName, governorate);
                         console.log('✅ تم إرسال البريد الإلكتروني بنجاح');
                     } catch (emailError) {
                         console.error('❌ فشل إرسال البريد الإلكتروني:', emailError);
                     }
 
-                    contactStatus.textContent = '✅ تم إرسال الطلب بنجاح مع صورة الإيصال!';
+                    contactStatus.textContent = '✅ تم إرسال الطلب بنجاح مع رابط الصورة!';
                     contactStatus.className = 'status-msg success';
                     showNotification('✅ تم إرسال الطلب بنجاح!', 'success');
 
@@ -4237,7 +4081,7 @@ const firebaseConfig = {
                         document.getElementById('fileName').classList.remove('show');
                         document.getElementById('imagePreview').classList.remove('show');
                         document.getElementById('previewImg').src = '';
-                        uploadedImageBase64 = null;
+                        uploadedImageUrl = null;
                         uploadedImageName = null;
                         contactStatus.textContent = '';
                         contactStatus.className = 'status-msg';
@@ -4251,7 +4095,7 @@ const firebaseConfig = {
 
                     try {
                         await sendOrderEmail(fullName, email, phone, address, total, productsList, totalItems,
-                            imageBase64, imageName, governorate);
+                            imageUrl, imageName, governorate);
                         contactStatus.textContent = '✅ تم إرسال الطلب عبر البريد الإلكتروني!';
                         contactStatus.className = 'status-msg success';
                         showNotification('✅ تم إرسال الطلب عبر البريد الإلكتروني!', 'success');
@@ -4267,7 +4111,7 @@ const firebaseConfig = {
                             document.getElementById('fileName').classList.remove('show');
                             document.getElementById('imagePreview').classList.remove('show');
                             document.getElementById('previewImg').src = '';
-                            uploadedImageBase64 = null;
+                            uploadedImageUrl = null;
                             uploadedImageName = null;
                             contactStatus.textContent = '';
                             contactStatus.className = 'status-msg';
@@ -4286,6 +4130,9 @@ const firebaseConfig = {
             });
         }
 
+        // ============================================================
+        // ✅ openProductDetails - كما هو
+        // ============================================================
         function openProductDetails(productId) {
             const product = allProducts.find(p => p.id === productId);
             if (!product) {
@@ -4305,6 +4152,11 @@ const firebaseConfig = {
             }
 
             const stars = '⭐'.repeat(Math.floor(product.rating)) + (product.rating % 1 >= 0.5 ? '⭐' : '');
+
+            const priceInfo = getProductPriceInfo(product);
+            const finalPrice = priceInfo.price;
+            const oldPrice = priceInfo.oldPrice;
+            const discountInfo = priceInfo.discount;
 
             let sizeOptionsHTML = '';
             if (product.sizes && product.sizes.length > 0) {
@@ -4435,6 +4287,10 @@ const firebaseConfig = {
                                 const hasVideoRel = p.video && p.video.trim() !== '';
                                 const relImage = p.images && p.images.length > 0 ? p.images[0] : null;
                                 const hasImageRel = relImage && relImage.trim() !== '';
+                                const relPriceInfo = getProductPriceInfo(p);
+                                const relDiscount = relPriceInfo.discount;
+                                const relFinalPrice = relPriceInfo.price;
+                                const relOldPrice = relPriceInfo.oldPrice;
                                 let mediaRelated = '';
                                 if (hasVideoRel) {
                                     mediaRelated = `
@@ -4456,12 +4312,13 @@ const firebaseConfig = {
                                         <div class="related-img">
                                             ${mediaRelated}
                                             ${p.images && p.images.length > 1 ? `<span style="position:absolute;top:4px;right:4px;background:rgba(5,150,105,0.85);color:#fff;padding:1px 8px;border-radius:10px;font-size:9px;z-index:5;"><i class="fas fa-images"></i> ${p.images.length}</span>` : ''}
+                                            ${relDiscount ? `<span style="position:absolute;top:4px;left:4px;background:#dc2626;color:#fff;padding:1px 8px;border-radius:10px;font-size:9px;z-index:5;">${relDiscount.text}</span>` : ''}
                                         </div>
                                         <div class="related-info">
                                             <h4>${p.name}</h4>
                                             <div class="related-price">
-                                                ${p.price} ج.م
-                                                ${p.oldPrice ? `<span class="old">${p.oldPrice} ج.م</span>` : ''}
+                                                ${relFinalPrice} ج.م
+                                                ${relOldPrice ? `<span class="old">${relOldPrice} ج.م</span>` : ''}
                                             </div>
                                             <button class="add-small-btn" onclick="event.stopPropagation(); openProductDetails(${p.id})">🛒 اختيار</button>
                                         </div>
@@ -4492,9 +4349,9 @@ const firebaseConfig = {
                             <span style="color:#64748b;font-size:14px;">(${product.reviews || 0} تقييم)</span>
                         </div>
                         <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:8px 0 12px;">
-                            <span style="font-size:28px;font-weight:800;color:#1a1a2e;">${product.price} ج.م</span>
-                            ${product.oldPrice ? `<span style="font-size:18px;color:#94a3b8;text-decoration:line-through;">${product.oldPrice} ج.م</span>` : ''}
-                            ${product.discount ? `<span style="font-size:14px;color:#059669;font-weight:700;background:rgba(5,150,105,0.1);padding:2px 12px;border-radius:20px;">${product.discount}</span>` : ''}
+                            <span style="font-size:28px;font-weight:800;color:#1a1a2e;">${finalPrice} ج.م</span>
+                            ${oldPrice ? `<span style="font-size:18px;color:#94a3b8;text-decoration:line-through;">${oldPrice} ج.م</span>` : ''}
+                            ${discountInfo ? `<span style="font-size:14px;color:#059669;font-weight:700;background:rgba(5,150,105,0.1);padding:2px 12px;border-radius:20px;">${discountInfo.text} خصم</span>` : ''}
                         </div>
                         ${product.freeShipping ? `<span style="color:#059669;font-weight:700;font-size:14px;display:block;margin-bottom:8px;">🚚 التوصيل على حسب المحافظه</span>` : ''}
                         ${optionsSection}
@@ -4589,6 +4446,10 @@ const firebaseConfig = {
             const colorName = selectedColor ? getColorName(selectedColor) : 'غير محدد';
             const size = selectedSize || 'غير محدد';
 
+            const priceInfo = getProductPriceInfo(product);
+            const finalPrice = priceInfo.price;
+            const oldPrice = priceInfo.oldPrice;
+
             const existingIndex = cart.findIndex(item => item.id === productId && item.selectedSize === size && item
                 .selectedColor === colorName);
             if (existingIndex !== -1) {
@@ -4596,6 +4457,8 @@ const firebaseConfig = {
             } else {
                 cart.push({
                     ...product,
+                    price: finalPrice,
+                    oldPrice: oldPrice,
                     quantity: 1,
                     selectedSize: size,
                     selectedColor: colorName,
@@ -4679,11 +4542,14 @@ const firebaseConfig = {
             }
         })();
 
-        console.log('✅ متجر sun Store يعمل مع الأقسام الجديدة وحقل المحافظة!');
+        console.log('✅ متجر sun Store يعمل مع ImgBB!');
         console.log('📦 عدد المنتجات:', allProducts.length);
-        console.log('✅ متجر sun Store يعمل مع نظام تسجيل الدخول الجديد!');
-        console.log('🔵 Forminit جاهز:', forminitReady);
+        console.log('🔵 Formcarry جاهز:', formcarryReady);
+        console.log('📮 Formcarry Endpoint:', FORMCARRY_ENDPOINT);
     </script>
+</body>
+
+</html>
 </body>
 
 </html>
